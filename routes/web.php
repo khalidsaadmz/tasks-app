@@ -20,11 +20,12 @@ use App\Http\Controllers\TaskController;
 
 Route::get('/', [TaskController::class, 'index']);
 Route::get('/tasks', [TaskController::class, 'index'])->name('tasks.index');
-Route::get('/tasks/create', [TaskController::class, 'create'])->name('tasks.create');
-Route::post('/tasks' , [TaskController::class, 'store'])->name('tasks.store');
+Route::get('/tasks/create', [TaskController::class, 'create'])->name('tasks.create')->middleware('auth');
+Route::post('/tasks' , [TaskController::class, 'store'])->name('tasks.store')->middleware('auth');
 
 
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
