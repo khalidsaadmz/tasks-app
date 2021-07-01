@@ -43,11 +43,11 @@ class TaskController extends Controller
     public function store(Request $request)
     {
         //
-        //dd($request->all());
+        //dd(auth()->user());
         $task = new Task;
         $task->task_title = $request->task_title;
         $task->task_content = $request->task_content;
-        $task->created_by_student = $request->u_id;
+        $task->created_by_student = auth()->user()->id;
         $task->save();
         return back();
     }

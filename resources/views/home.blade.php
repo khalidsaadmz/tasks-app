@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('title')
-    {{ $title }}
+    {{ $title}}
 @endsection
 @section('content')
+
     @if(!$tasks->count())
         Oops! No tasks available
         @else
@@ -17,5 +18,6 @@
             </ul>
         @endif
 
+    <br>
     <a href="{{route('tasks.create')}}" style="color: #1d68a7"> New Task</a>
 @endsection

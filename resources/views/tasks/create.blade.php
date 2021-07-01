@@ -19,10 +19,6 @@
             <input type="text" class="form-control" name="task_content" id="task_content">
         </div>
 
-        <div class="form-group">
-            <label>User Id</label>
-            <input type="text" class="form-control" name="u_id" id="u_id">
-        </div>
 
         <input type="submit" name="send" value="Create" class="btn btn-dark btn-block">
     </form>
