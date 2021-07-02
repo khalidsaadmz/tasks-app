@@ -53,7 +53,7 @@ class TaskController extends Controller
         $task->task_content = $request->task_content;
         $task->created_by_student = auth()->user()->id;
         $task->save();
-        return back();
+        return redirect('/');
     }
 
     /**
