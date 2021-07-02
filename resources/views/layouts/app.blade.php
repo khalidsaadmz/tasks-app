@@ -56,5 +56,10 @@
 
 
 </div>
+<footer class="text-center bg-gray-100">
+    <div id="copyright text-right">Copyright ©  2021 Khalid Saad M Z Al-Kubaisi</div>
+    <br>
+</footer>
+
 </body>
 </html>
