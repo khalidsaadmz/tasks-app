@@ -32,6 +32,9 @@
 
                 <a href="{{ route('logout') }}" class="text-sm text-gray-700 underline">Logout</a>
 
+
+                <p> Welcome <strong style="color: darkred"> {{Auth::user()->name}} </strong> </p>
+
             @else
                 <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
 

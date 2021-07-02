@@ -20,7 +20,7 @@
 
         <br>
         <br>
-        <a href="{{route('tasks.create')}}" style="color: #1d68a7"> New Task</a>
+        <a href="{{route('tasks.create')}}" style="color: #1d68a7"> <b> New Task </b> </a>
 
     @else
         <p> <b style="color: #1f6fb2"> Please LOG IN to view your tasks.</b></p>
